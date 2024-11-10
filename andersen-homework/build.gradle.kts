@@ -22,6 +22,8 @@ dependencies {
 
     // Corrected dependency syntax for Kotlin DSL
     implementation("jakarta.validation:jakarta.validation-api:3.0.2")
+    compileOnly("org.projectlombok:lombok:1.18.28")
+    annotationProcessor("org.projectlombok:lombok:1.18.28")
 }
 
 tasks.test {
