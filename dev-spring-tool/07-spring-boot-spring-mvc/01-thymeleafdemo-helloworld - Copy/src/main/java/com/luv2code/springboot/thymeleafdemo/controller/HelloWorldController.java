@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.luv2code.springboot.thymeleafdemo.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -42,3 +43,9 @@ public class HelloWorldController {
         return "helloworld";
     }
 }
+=======
+package controller;
+
+public class HelloWorldController {
+}
+>>>>>>> 9bfa0e9 (getting data from spring model)
