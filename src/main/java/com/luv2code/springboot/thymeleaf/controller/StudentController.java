@@ -18,6 +18,6 @@ public class StudentController {
     }
         @PostMapping("/processStudentForm")
         public String processForm(@ModelAttribute("student") Student theStudent){
-        return "student-confirmation";
+        return "student-confirmation.HTML";
     }
 }
