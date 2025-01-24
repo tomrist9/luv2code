@@ -16,6 +16,14 @@
 
     Last name: <input type="text" th:field= " ${student.lastName}" />
     <br><br>
+
+    Favorite Programming Language:
+
+    <input type="radio" th:field="*{favoriteLanguage}"
+           th:each="tempLang : ${languages}"
+           th:value="${tempLang}"
+           th:text="${tempLang}" />
+
     <input type="submit" value="Submit"/>
 
 </form>
