@@ -2,19 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World - Input Form</title>
+    <title>Thymeleaf Demo</title>
+
+    <!-- reference CSS file -->
+    <link rel="stylesheet"
+          th:href="@{/css/demo.css}" />
 </head>
+
 <body>
 
-  <form th:action="@{/processFormVersionThree}" method="GET">
-
-      <input type="text" name="studentName"
-             placeholder="What's your name?" />
-
-      <input type="submit" />
-
-  </form>
+    <p th:text="'Time on the server is ' + ${theDate}" class="funny" />
 
 </body>
+
 </html>
